@@ -5,11 +5,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+
+        /* this is for background img for link and change size */
+        body {
+            background: url(https://i.ytimg.com/vi/yz-uktixvKQ/hq720.jpg?sqp=-oaymwE7CK4FEIIDSFryq4qpAy0IARUAAAAAGAElAADIQj0AgKJD8AEB-AH-CYAC0AWKAgwIABABGEAgIih_MA8=&rs=AOn4CLAJlU2C4Q26DSWjcwNeb0nCI1XjEA) no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+            margin: 0%;
+            padding: 0%;
+        }
+
+        /* for add background transparant  */
+        .nav {
+
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.8);
+            color: #c00707;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+
+        }
+    </style>
+
+
 </head>
 
 <body>
     <header>
-        <nav>
+        <!-- this is nav barr  -->
+        <nav class="nav">
             <a href="#home"> home </a>
             <a href="#about"> about </a>
             <a href="#work"> work </a>
@@ -18,46 +43,60 @@
 
         </nav>
     </header>
-    <main>
-        
-        <section>
+    <main class="ma">
+        <!--  main here -->
+
+        <section class="sec">
             <a name="home"></a>
 
-            <h2>Welcome to My Portfolio</h2>
+<!-- title of section  -->
+            <h2 class="first-section">Welcome to My Portfolio</h2>
 
-            <p>Hello and welcome! I’m Sina, a web developer with a passion for building dynamic and user-friendly
+            <br>
+            <div class="user-image">
+                <img src="sinapic.jpg" width="200" height="200" alt="">
+            </div>
+
+            <p class="parag">Hello and welcome! I’m Sina, a web developer with a passion for building dynamic and
+                user-friendly
                 digital experiences. Here, you’ll find a collection of my work that showcases my skills and expertise in
                 creating compelling websites and applications.</p>
 
-            <h2>What I Do</h2>
-            <p>I specialize in both front-end and back-end development, blending technical proficiency with a keen eye
+            <h2 class="first-section header">What I Do</h2>
+            <p class="parag">I specialize in both front-end and back-end development, blending technical proficiency
+                with a keen eye
                 for design. From crafting responsive layouts and interactive features to developing robust backend
                 systems, I strive to deliver solutions that are both functional and visually appealing.</p>
 
-            <h2>Explore My Work</h2>
+            <h2 class="first-section header">Explore My Work</h2>
 
-            <p>Take a look at my projects to see examples of my work and get a sense of my style and capabilities.
+            <p class="parag">Take a look at my projects to see examples of my work and get a sense of my style and
+                capabilities.
                 Whether you’re interested in a sleek, modern website or a complex web application, I’m excited to share
                 what I can do.</p>
 
-            <h2>Let’s Connect</h2>
-            <p>If you have a project in mind, want to discuss a potential collaboration, or simply want to chat about
+            <h2 class="first-section header">Let’s Connect</h2>
+            <p class="parag">If you have a project in mind, want to discuss a potential collaboration, or simply want to
+                chat about
                 web development, feel free to reach out. I’m always open to new opportunities and connections.
 
                 Thank you for visiting my portfolio, and I hope you enjoy exploring my work!</p>
 
-
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/W-j4QGAgNu8?si=p1AvkOOFaH4EhCGr"
-                title="YouTube video player" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <div class="ytvideo">
+                <iframe class="video" width="560" height="315"
+                    src="https://www.youtube.com/embed/W-j4QGAgNu8?si=p1AvkOOFaH4EhCGr" title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
         </section>
 
-        <section>
+        <section class="section2">
             <a name="about"></a>
-            <h2>About Me</h2>
+            <h2 class="first-section header">About Me</h2>
 
-            <p>Hi, I'm Sina, a passionate web developer dedicated to creating engaging and innovative digital
+            <p class="parag">Hi, I'm Sina, a passionate web developer dedicated to creating engaging and innovative
+                digital
                 experiences.
                 With a strong foundation in both front-end and back-end technologies, I specialize in crafting
                 user-centric
@@ -88,10 +127,10 @@
             <p>+216999999</p>
 
             <h4>email</h4>
-            <p>sina@gmail.com</p>
+            <p class="parag">sina@gmail.com</p>
             <br />
-            <img src="sina.jpg" width="200" height="200" alt="">
-            <br />
+
+
             <audio controls>
                 <source src="sina.mp3" type="audio/mpeg">
                 Please Check the audio Extension
@@ -104,12 +143,14 @@
         <section>
             <a name="work"></a>
             <h2>My Work</h2>
-            <p>Here’s a selection of projects I’ve worked on, showcasing a variety of skills and technologies. Each
+            <p class="parag">Here’s a selection of projects I’ve worked on, showcasing a variety of skills and
+                technologies. Each
                 project
                 demonstrates my ability to create effective and engaging web solutions.</p>
 
             <h3>Food Website</h3>
-            <p>Description: Designed and developed a dynamic, user-friendly website for a local food and café business.
+            <p class="parag">Description: Designed and developed a dynamic, user-friendly website for a local food and
+                café business.
                 The
                 site features a visually appealing homepage, an interactive menu, and a reservation system to enhance
                 the
@@ -118,24 +159,28 @@
                 and responsive design across devices.
                 <br />
             <h3>Key Features:</h3>
-            Interactive Menu: Users can browse through categories, view detailed descriptions, and see images of dishes.
-            <br />
-            Online Reservations: Integrated a reservation system allowing customers to book tables directly from the
-            website.
-            <br />
-            Responsive Design: Ensured the website is fully responsive, providing an optimal viewing experience on all
-            devices.
-            <br />
-            Contact Form: Added a contact form for customer inquiries and feedback.
-            <br />
-            Technologies Used: HTML5, CSS3, JavaScript, React, Node.js, Express.js, MongoDB
-            <br />
-            link: <a href="https://fr.restaurantguru.com/fast-food-Sfax-t11">click here</a>
-            <br />
-            Additional Details:
-            The project required close collaboration with the client to understand their brand identity and specific
-            needs. I incorporated custom animations and transitions to make the site more engaging and utilized SEO best
-            practices to improve search engine visibility.
+            <P class="parag">
+                Interactive Menu: Users can browse through categories, view detailed descriptions, and see images of
+                dishes.
+                <br />
+                Online Reservations: Integrated a reservation system allowing customers to book tables directly from the
+                website.
+                <br />
+                Responsive Design: Ensured the website is fully responsive, providing an optimal viewing experience on
+                all
+                devices.
+                <br />
+                Contact Form: Added a contact form for customer inquiries and feedback.
+                <br />
+                Technologies Used: HTML5, CSS3, JavaScript, React, Node.js, Express.js, MongoDB
+                <br />
+                link: <a href="https://fr.restaurantguru.com/fast-food-Sfax-t11">click here</a>
+                <br />
+                Additional Details:
+                The project required close collaboration with the client to understand their brand identity and specific
+                needs. I incorporated custom animations and transitions to make the site more engaging and utilized SEO
+                best
+                practices to improve search engine visibility.
 
             </p>
 
@@ -152,13 +197,14 @@
             <a name="resume"></a>
             <h2>Resume:</h2>
             <h2>SINA</h2>
-            <P>Tunis, Sfax, Tunisia
+            <P class="parag">Tunis, Sfax, Tunisia
                 999-999-999 | sina@gmail.com
                 LinkedIn Profile: linkedin.com/in/sina GitHub Profile: github.com/SINA7K</P>
 
             <H2>Professional Summary</H2>
 
-            <p>Highly skilled web developer with [X] years of experience in building responsive and engaging websites
+            <p class="parag">Highly skilled web developer with [X] years of experience in building responsive and
+                engaging websites
                 and
                 applications. Adept at both front-end and back-end development with a strong focus on delivering
                 user-centric solutions. Passionate about leveraging the latest technologies and best practices to create
@@ -166,7 +212,7 @@
 
             <h2>Skills</h2>
 
-            <p>Front-End: HTML5, CSS3, JavaScript, React, Vue.js, Angular
+            <p class="parag">Front-End: HTML5, CSS3, JavaScript, React, Vue.js, Angular
                 <br />
                 Back-End: Node.js, Express.js, Python, Django, Ruby on Rails
                 <br />
@@ -182,7 +228,7 @@
 
             <h2>Experience</h2>
 
-            <p>Developed and maintained responsive websites and applications
+            <p class="parag">Developed and maintained responsive websites and applications
                 <br />
                 Collaborated with designers and stakeholders to create user-friendly interfaces and seamless user
                 experiences.
@@ -195,7 +241,7 @@
 
             <h2>Languages</h2>
 
-            <p>English: Fluent
+            <p class="parag">English: Fluent
                 <br />
                 Arabic: Native
                 <br />
@@ -203,6 +249,7 @@
             </p>
 
             <h3>for more information </h3>
+            <!-- link to go to link  -->
             <a href="C:\Users\User\Desktop\html\cv.pdf">click here</a>
 
 
@@ -212,10 +259,12 @@
 
         </section>
 
+
+        <!-- form to add number and name ... -->
         <section>
             <a name="contact"></a>
             <h2>For Contact</h2>
-            <form>
+            <form class="form">
                 <label>Name:</label>
                 <input type="text" name="first-name" />
                 <br />
@@ -233,12 +282,14 @@
                 <br />
 
             </form>
-
+<div class="mycontact">
             <img src="contact.png" width="600" height="100" alt="">
+</div>
         </section>
     </main>
 
-    <footer>
+    <!-- footer of website for copy right  -->
+    <footer class="footbar">
         <p>&copy; 2024 SINA. All rights reserved.</p>
 
     </footer>

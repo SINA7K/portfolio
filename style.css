@@ -1,0 +1,71 @@
+
+/* all text inline  */
+.nav a{
+    text-decoration: none;
+    display: inline;
+    width: 50px;
+    height: 50px;
+    margin-right: 25px;
+    color: rgb(162, 0, 0);
+    
+    
+}
+/* nav barr in center */
+.nav {
+
+    text-align: center;
+}
+
+/* change fond family */
+.nav a{
+    font-family: "roboto", cursive; }
+
+    .parag {
+
+        color:rgb(255, 255, 255);
+    }
+/* ajuster image */
+.user-image{
+    width:25%;
+    margin: 0 auto;
+}
+/* faire une bordure pour image */
+.user-image img{
+
+    border-radius: 500%;
+    border : 1px solid rgb(15, 51, 181);
+
+}
+/* change postion of video  */
+.ytvideo{
+width: 50px;
+margin: 0 auto;
+
+}
+/* change postion  */
+.mycontact{
+width: 25%;
+margin: 0 auto;
+
+}
+/* center all form  */
+.form{
+text-align: center;    
+}
+
+/* change text to center and add background nd shadow  */
+.footbar{
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #f3eaea;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.first-section{
+
+    position: relative;
+    left: 600px; 
+    top: 20px; 
+}
+
